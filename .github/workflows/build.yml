@@ -23,7 +23,7 @@ jobs:
       run: nuget restore TestASP2.sln
  
     - name: Build and Publish Web App
-      run: msbuild SimpleFrameworkApp.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+      run: msbuild TestASP2.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
  
     - name: Upload Artifact
       uses: actions/upload-artifact@v1.0.0
